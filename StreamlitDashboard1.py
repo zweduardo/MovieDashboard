@@ -5,7 +5,7 @@ import pandas as pd
 
 
 #Get the data from the database
-loc1 = r"C:\Users\eduar\Documents\Selenium\themoviedb.db"
+loc1 = "themoviedb.db"
 themoviedb = sqlite3.connect(loc1)
 themoviedf = pd.read_sql_query("SELECT genre_ids,id as movie_id,original_language,title,popularity,release_date,vote_average,vote_count FROM TopRated",themoviedb)
 castdf = pd.read_sql_query("SELECT id as CastId,known_for_department,original_name,character,movie_id FROM Cast WHERE known_for_department = 'Acting'",themoviedb)
