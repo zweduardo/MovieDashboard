@@ -60,4 +60,4 @@ with col11.popover("Credits"):
 
 #Creating the expander to show the dataframe
 with st.expander("Click this expander to see more information"):
-    st.write(showdf.sort_values('vote_average',ascending=False),use_container_width=True)
+    st.write(showdf.sort_values('vote_average',ascending=False))
