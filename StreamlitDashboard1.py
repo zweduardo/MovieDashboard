@@ -1,8 +1,8 @@
-from turtle import title
+
 import streamlit as st
 import sqlite3
 import pandas as pd
-import plotly.express as px
+
 
 #Get the data from the database
 loc1 = r"C:\Users\eduar\Documents\Selenium\themoviedb.db"
